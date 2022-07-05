@@ -1,0 +1,47 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:columnCount="1"
+        android:rowCount="3">
+
+        <Button
+            android:id="@+id/btn_crawlers"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="Crawlers"
+            android:textSize="30sp"
+            />
+
+        <Button
+            android:id="@+id/btn_products"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:text="Products"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_schedulers"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="2"
+            android:layout_gravity="fill"
+            android:text="Schedulers"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/btn_webhooks"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="2"
+            android:layout_gravity="fill"
+            android:text="Webhooks"
+            android:textSize="30sp" />
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">idf</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_crawlers">CrawlersActivity</string>
+    <string name="username">username</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="remember_me">Remember me</string>
+    <string name="prefence_file_key">idf_token</string>
+    <string name="product_image_description">product_image</string>
+    <string name="lorem">lorem ipsum dolor sit amet</string>
+    <string name="product_id">Product ID</string>
+    <string name="brand">Brand</string>
+    <string name="barcode">Barcode</string>
+    <string name="category">Category</string>
+    <string name="price">Price</string>
+    <string name="discount_price">Discount price</string>
+    <string name="crawler_slug">Crawler slug</string>
+    <string name="description">Description</string>
+</resources>
