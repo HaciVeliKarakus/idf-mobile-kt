@@ -15,6 +15,12 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
 
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        menuClickListener()
+
+    }
+
+    private fun menuClickListener() {
         val btnCrawlers = binding.btnCrawlers.also {
             it.setOnClickListener(this)
         }
@@ -27,7 +33,6 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
         val btnWebhooks = binding.btnWebhooks.also {
             it.setOnClickListener(this)
         }
-
     }
 
     /**
@@ -38,16 +43,16 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v?.id) {
             R.id.btn_crawlers -> {
-                startActivity(Intent(this, CrawlersActivity::class.java))
+                startActivity(Intent(this@HomeActivity, CrawlersActivity::class.java))
             }
             R.id.btn_products -> {
-                startActivity(Intent(this, ProductsActivity::class.java))
+                startActivity(Intent(this@HomeActivity, ProductFilterActivity::class.java))
             }
             R.id.btn_schedulers -> {
-                startActivity(Intent(this, SchedulersActivity::class.java))
+                startActivity(Intent(this@HomeActivity, SchedulersActivity::class.java))
             }
             R.id.btn_webhooks -> {
-                startActivity(Intent(this, WebhooksActivity::class.java))
+                startActivity(Intent(this@HomeActivity, WebhooksActivity::class.java))
             }
         }
     }

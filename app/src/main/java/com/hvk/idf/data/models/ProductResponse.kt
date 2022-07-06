@@ -2,6 +2,9 @@ package com.hvk.idf.data.models
 
 import java.io.Serializable
 
+
+//data class
+
 data class ProductResponse(
     val info: Info,
     val links: Links,
@@ -17,8 +20,8 @@ data class Info(
 )
 
 data class Links(
-    val next: String,
-    val previous: Any
+    val next: String?,
+    val previous: String?
 )
 
 data class ProductModel(

@@ -10,7 +10,7 @@ import com.hvk.idf.databinding.ActivityProductDetailBinding
 import com.hvk.idf.data.models.ProductModel
 
 class ProductDetailActivity : AppCompatActivity() {
-    lateinit var binding: ActivityProductDetailBinding
+    private lateinit var binding: ActivityProductDetailBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityProductDetailBinding.inflate(layoutInflater)
@@ -18,6 +18,10 @@ class ProductDetailActivity : AppCompatActivity() {
 
         val product = intent.extras!!.get("product") as ProductModel
 
+        fillViewItems(product)
+    }
+
+    private fun fillViewItems(product: ProductModel) {
         Glide.with(binding.root)
             .load(product.image_url)
             .diskCacheStrategy(DiskCacheStrategy.ALL)
@@ -33,14 +37,14 @@ class ProductDetailActivity : AppCompatActivity() {
         binding.textViewCrawlerSlug.text = product.crawler_slug
         binding.textViewCategory.text = product.category
         binding.textViewCrawlerDescription.text = product.description
-//        price
+        //        price
         binding.textViewPrice.text = product.price
         binding.textViewDiscountPrice.text = product.disc_price
-//        master details
+        //        master details
         binding.textViewMasterID.text = product.master_id
         binding.textViewMasterStatus.text = product.master_status
         binding.textViewIsMaster.text = product.is_master.toString()
-//        date details
+        //        date details
 
         binding.textViewCreateDate.text = product.created_at
         binding.textViewUpdateDate.text = product.updated_at

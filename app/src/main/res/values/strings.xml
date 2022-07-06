@@ -25,4 +25,9 @@
     <string name="discount_price">Discount price</string>
     <string name="crawler_slug">Crawler slug</string>
     <string name="description">Description</string>
+    <string name="search_anything_hint">search anything…</string>
+    <string name="product_id_hint">product id…</string>
+    <string name="barcode_hint">barcode…</string>
+    <string name="product_name_hint">product_name...</string>
+    <string name="get_results_btn_hint">Get results</string>
 </resources>
